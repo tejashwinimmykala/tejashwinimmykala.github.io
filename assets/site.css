@@ -271,6 +271,9 @@ h3 { margin: 0; }
 .wm small {
   margin-top: 4px; font: 500 10px/1 var(--mono); letter-spacing: .16em; color: var(--muted);
 }
+/* Stamp holding the employer's logo instead of a text wordmark */
+.wm-logo { align-items: center; background: #fff; }
+.wm-logo img { display: block; width: auto; height: auto; max-width: 144px; max-height: 40px; }
 .hl { grid-column: 2; grid-row: 1; margin: 0; padding-left: 20px; }
 .hl li { margin-bottom: 10px; padding-left: 4px; }
 .hl li::marker { color: var(--red); }
@@ -553,6 +556,8 @@ h3 { margin: 0; }
   .role-head { flex-direction: row; align-items: center; gap: 14px; margin-bottom: 12px; }
   .wm { min-width: 0; min-height: 52px; padding: 6px 10px; font-size: 19px; }
   .wm small { font-size: 9px; }
+  .wm-logo { flex: 0 0 auto; }
+  .wm-logo img { max-width: 104px; max-height: 30px; }
   .role h3 { font-size: 20px; }
   .co { font-size: 14px; }
   .hl { padding-left: 18px; font-size: 15px; line-height: 1.45; }
