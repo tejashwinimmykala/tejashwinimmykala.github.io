@@ -1,0 +1,77 @@
+{
+  "roles": [
+    {
+      "company": "Abbott Laboratories",
+      "logo": "assets/images/logos/abbott-laboratories.svg",
+      "title": "Knowledge Management Analyst",
+      "start": "Apr 2026",
+      "end": "Present",
+      "location": "United States",
+      "description": "Analyze enterprise knowledge repositories, SOPs and operational documentation across business and technology teams, improving accuracy, consistency and access to reliable guidance.",
+      "highlights": [
+        "Reviewed 120+ knowledge assets to identify outdated information, duplicate content and process gaps across business and technology teams.",
+        "Gathered requirements from subject matter experts and process owners to structure information through standardized taxonomies, metadata, naming conventions and content ownership guidelines.",
+        "Supported repository consolidation by mapping legacy documentation to standardized structures and identifying duplicate or obsolete materials across 3 knowledge repositories.",
+        "Developed and maintained SOPs, knowledge articles, FAQs and process guides, coordinating reviews with content owners.",
+        "Tracked content freshness, review compliance and documentation gaps through governance reports, helping stakeholders prioritize overdue reviews."
+      ],
+      "technologies": [
+        "SOPs",
+        "Taxonomies",
+        "Metadata",
+        "Knowledge repositories"
+      ]
+    },
+    {
+      "company": "DICEUS",
+      "logo": "assets/images/logos/diceus.svg",
+      "title": "Business Systems Analyst",
+      "start": "Aug 2025",
+      "end": "Mar 2026",
+      "location": "Austin, TX",
+      "description": "Business systems analysis for application enhancements, covering requirements, API and data-flow analysis, and UAT with developers, QA and business stakeholders.",
+      "highlights": [
+        "Elicited requirements through stakeholder interviews and process workshops, translating them into functional specifications, user stories, use cases and acceptance criteria.",
+        "Documented BRDs, FRDs, business rules and process flows, comparing AS-IS and TO-BE workflows to find gaps and dependencies across 4 key business workflows.",
+        "Analyzed REST API interfaces and integration requirements, documenting field-level mappings and validation rules for 3 system interfaces.",
+        "Used SQL and Excel to validate application data, reconcile reporting discrepancies and investigate business-rule exceptions.",
+        "Coordinated with developers, QA engineers and product teams across 8 Agile sprints, and prepared UAT scenarios and test cases to support defect resolution before release."
+      ],
+      "technologies": [
+        "SQL",
+        "Excel",
+        "REST APIs",
+        "Agile",
+        "UAT",
+        "BRDs",
+        "FRDs",
+        "Jira",
+        "Confluence"
+      ]
+    },
+    {
+      "company": "Mphasis",
+      "logo": "assets/images/logos/mphasis.png",
+      "title": "Business Analyst",
+      "start": "Jul 2021",
+      "end": "Aug 2023",
+      "location": "Hyderabad, India",
+      "description": "Business analysis for application enhancements: requirements, workflow and gap analysis, reporting definitions and UAT support.",
+      "highlights": [
+        "Gathered requirements through stakeholder interviews, workshops and existing-system reviews, translating them into functional requirements for development and testing teams.",
+        "Created BRDs, FRDs, user stories, acceptance criteria and process flows supporting 5+ application enhancements.",
+        "Mapped AS-IS and TO-BE workflows and ran gap and impact analysis to find process inefficiencies and recommend improvements.",
+        "Queried and validated business data with SQL and Excel, reconciling discrepancies across 10+ reporting datasets.",
+        "Defined reporting requirements, KPIs and validation criteria, and supported UAT by validating acceptance criteria and tracking defects, with traceability in Jira and Confluence."
+      ],
+      "technologies": [
+        "SQL",
+        "Excel",
+        "Agile",
+        "UAT",
+        "Jira",
+        "Confluence"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "groups": [
+    {
+      "name": "Requirements",
+      "items": [
+        "Requirements Elicitation",
+        "BRD",
+        "FRD",
+        "User Stories",
+        "Acceptance Criteria",
+        "Use Cases",
+        "Business Rules",
+        "Functional Specifications",
+        "Requirements Traceability Matrix (RTM)"
+      ]
+    },
+    {
+      "name": "Process & Systems Analysis",
+      "items": [
+        "AS-IS/TO-BE Analysis",
+        "Business Process Mapping",
+        "Workflow Analysis",
+        "Gap Analysis",
+        "Impact Analysis",
+        "Root Cause Analysis",
+        "Process Improvement",
+        "Data Flow Analysis",
+        "System Integration"
+      ]
+    },
+    {
+      "name": "Data & Reporting",
+      "items": [
+        "SQL",
+        "Advanced Excel",
+        "Power BI",
+        "Tableau",
+        "DAX",
+        "Power Query",
+        "SSRS",
+        "KPI Reporting",
+        "Data Validation",
+        "Data Reconciliation",
+        "Trend Analysis"
+      ]
+    },
+    {
+      "name": "API & Integration",
+      "items": [
+        "REST APIs",
+        "Postman",
+        "API Testing",
+        "API Validation",
+        "Swagger",
+        "Data Mapping",
+        "Interface Analysis",
+        "ETL/ELT"
+      ]
+    },
+    {
+      "name": "Agile & Testing",
+      "items": [
+        "Agile",
+        "Scrum",
+        "Sprint Planning",
+        "Backlog Refinement",
+        "Jira",
+        "Confluence",
+        "Azure DevOps",
+        "UAT",
+        "Functional Testing",
+        "Regression Testing",
+        "Test Cases",
+        "Defect Tracking"
+      ]
+    },
+    {
+      "name": "Knowledge & Documentation",
+      "items": [
+        "SOPs",
+        "Process Documentation",
+        "Knowledge Articles",
+        "Knowledge Repositories",
+        "Metadata Management",
+        "Content Classification",
+        "Version Control",
+        "Knowledge Gap Analysis"
+      ]
+    },
+    {
+      "name": "Tools & Databases",
+      "items": [
+        "Python",
+        "Pandas",
+        "SQL Server",
+        "PostgreSQL",
+        "MySQL",
+        "Oracle DB",
+        "SSIS",
+        "Azure Data Factory",
+        "Power Automate",
+        "Lucidchart",
+        "Miro",
+        "Git"
+      ]
+    },
+    {
+      "name": "Domain & Soft Skills",
+      "items": [
+        "Healthcare Operations",
+        "Claims Systems",
+        "Provider Data",
+        "Member Data",
+        "Compliance Reporting",
+        "Stakeholder Communication",
+        "Cross-Functional Collaboration",
+        "Business-IT Liaison"
+      ]
+    }
+  ]
+}

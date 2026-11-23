@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>provenance-gate | Tejashwini M</title>
+<meta name="description" content="provenance-gate: a SLSA provenance verifier that checks signed attestations against policy and rebuilds the artifact to diff it.">
+<link rel="canonical" href="https://tejashwinimmykala.github.io/projects/provenance-gate.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <marker id="ar-l" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9FB3CC"/></marker>
+  <marker id="ar-h" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#FF8A5B"/></marker>
+</defs></svg>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="../">Tejashwini M</a>
+    <a class="back" href="../#projects">All projects</a>
+  </div>
+</header>
+<main id="main">
+<article class="sheet">
+  <div class="wrap">
+    <p class="cat">Supply-chain security</p>
+    <h1 class="sheet-title">provenance-gate</h1>
+    <figure class="sheet-hero">
+      <img src="../assets/images/projects/provenance-gate-hero.jpg" alt="provenance-gate — Concept render" width="1280" height="720" loading="lazy">
+      <figcaption>Concept render</figcaption>
+    </figure>
+    <figure class="fig sheet-fig">
+      <svg viewBox="0 0 360 200" role="img" aria-label="Artifact and attestation enter four gates in a row: signature, digest, policy and rebuild. A build that fails the rebuild gate is rejected with NOT_REPRODUCIBLE.">
+        <text x="12" y="20" class="m">ARTIFACT AND ATTESTATION IN</text>
+        <rect x="12" y="34" width="92" height="28" class="bx"/><text x="20" y="52" class="s">artifact</text>
+        <rect x="12" y="72" width="92" height="28" class="bx"/><text x="20" y="90" class="s">attestation</text>
+        <path d="M104 48 H116 V100 H134" class="ln" marker-end="url(#ar-l)"/>
+        <path d="M104 86 H116" class="ln"/>
+        <line x1="164" y1="100" x2="196" y2="100" class="ln" marker-end="url(#ar-l)"/>
+        <line x1="224" y1="100" x2="256" y2="100" class="ln" marker-end="url(#ar-l)"/>
+        <line x1="284" y1="100" x2="316" y2="100" class="ln" marker-end="url(#ar-l)"/>
+        <circle cx="150" cy="100" r="14" class="bx"/><circle cx="210" cy="100" r="14" class="bx"/>
+        <circle cx="270" cy="100" r="14" class="bx"/><circle cx="330" cy="100" r="14" class="hot"/>
+        <text x="150" y="104" class="s" text-anchor="middle">1</text>
+        <text x="210" y="104" class="s" text-anchor="middle">2</text>
+        <text x="270" y="104" class="s" text-anchor="middle">3</text>
+        <text x="330" y="104" class="s" text-anchor="middle" style="fill:#FF8A5B">4</text>
+        <text x="12" y="146" class="m">1 SIGNATURE</text>
+        <text x="110" y="146" class="m">2 DIGEST</text>
+        <text x="196" y="146" class="m">3 POLICY</text>
+        <text x="282" y="146" class="m" style="fill:#FF8A5B">4 REBUILD</text>
+        <rect x="12" y="160" width="112" height="26" class="bx"/>
+        <text x="22" y="177" class="s" style="fill:#7FB8FF">ACCEPT</text>
+        <rect x="132" y="160" width="216" height="26" class="hot" style="fill:#2A1A22"/>
+        <text x="142" y="177" class="s" style="fill:#FF8A5B;font-size:11px">REJECT · NOT_REPRODUCIBLE</text>
+      </svg>
+      <figcaption>Drawing: four gates, and the rebuild gate that rejects a compromised build</figcaption>
+    </figure>
+    <div class="sheet-cols">
+      <div class="sheet-text">
+        <p>A SLSA provenance verifier that checks signed attestations against policy, then rebuilds the artifact and diffs it to show the binary came from the reviewed source rather than trusting the attestation alone.</p>
+        <ul class="hl" aria-label="Highlights">
+          <li>Rejects with 9 specific reason codes, including DIGEST_MISMATCH, REPLAYED and NOT_REPRODUCIBLE</li>
+          <li>19 tests covering the genuine path and each tamper class</li>
+          <li>Python standard library only, with a browser demo of the decision workflow</li>
+        </ul>
+      </div>
+      <div class="sheet-side">
+        <ul class="tags" aria-label="Technologies in provenance-gate">
+          <li>Python</li><li>SLSA</li><li>in-toto</li><li>HMAC-SHA256</li><li>GitHub Pages</li>
+        </ul>
+        <div class="proj-links">
+          <a href="https://github.com/tejashwinimmykala/provenance-gate" aria-label="provenance-gate source code on GitHub">Source code</a>
+          <a href="https://tejashwinimmykala.github.io/provenance-gate/" aria-label="provenance-gate live demo">Live demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <span>Tejashwini M · Business Systems Analyst · Lake Bluff, IL</span>
+    <a href="../#projects">Back to projects</a>
+  </div>
+</footer>
+</body>
+</html>

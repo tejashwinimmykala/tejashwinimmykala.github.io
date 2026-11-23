@@ -1,0 +1,20 @@
+{
+  "entries": [
+    {
+      "institution": "University of North Texas",
+      "degree": "Master's",
+      "field": "Information Systems Technology",
+      "start": "Aug 2023",
+      "end": "May 2025",
+      "location": "Denton, Texas"
+    },
+    {
+      "institution": "Malla Reddy Institute of Technology and Science",
+      "degree": "Bachelor of Technology",
+      "field": "Electronics and Communication Engineering",
+      "start": "Aug 2017",
+      "end": "Jun 2021",
+      "location": "Hyderabad, India"
+    }
+  ]
+}

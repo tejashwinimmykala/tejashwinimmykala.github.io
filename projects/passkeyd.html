@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>passkeyd | Tejashwini M</title>
+<meta name="description" content="passkeyd: a Go WebAuthn (passkey) relying-party library and HTTP server with its own CBOR decoder, COSE key parser and a software authenticator for testing.">
+<link rel="canonical" href="https://tejashwinimmykala.github.io/projects/passkeyd.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <marker id="ar-l" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9FB3CC"/></marker>
+  <marker id="ar-h" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#FF8A5B"/></marker>
+</defs></svg>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="../">Tejashwini M</a>
+    <a class="back" href="../#projects">All projects</a>
+  </div>
+</header>
+<main id="main">
+<article class="sheet">
+  <div class="wrap">
+    <p class="cat">Authentication</p>
+    <h1 class="sheet-title">passkeyd</h1>
+    <figure class="sheet-hero">
+      <img src="../assets/images/projects/passkeyd-hero.jpg" alt="passkeyd — Concept render" width="1280" height="720" loading="lazy">
+      <figcaption>Concept render</figcaption>
+    </figure>
+    <figure class="fig sheet-fig">
+      <svg viewBox="0 0 360 200" role="img" aria-label="Passkey sequence: the server sends a challenge, the browser returns an assertion, the server runs its typed checks, stores a single-use challenge, and rejects a mismatched origin.">
+        <text x="60" y="22" class="m" text-anchor="middle">BROWSER</text>
+        <text x="180" y="22" class="m" text-anchor="middle">SERVER</text>
+        <text x="300" y="22" class="m" text-anchor="middle">STORE</text>
+        <line x1="60" y1="30" x2="60" y2="190" class="ln dash"/>
+        <line x1="180" y1="30" x2="180" y2="190" class="ln dash"/>
+        <line x1="300" y1="30" x2="300" y2="190" class="ln dash"/>
+        <line x1="178" y1="60" x2="62" y2="60" class="ln" marker-end="url(#ar-l)"/>
+        <text x="120" y="54" class="s" text-anchor="middle">challenge</text>
+        <line x1="62" y1="84" x2="178" y2="84" class="ln" marker-end="url(#ar-l)"/>
+        <text x="120" y="78" class="s" text-anchor="middle">assertion</text>
+        <rect x="128" y="100" width="104" height="22" class="bx"/>
+        <text x="180" y="115" class="m" text-anchor="middle" style="fill:#E9F1FA">typed checks</text>
+        <line x1="182" y1="142" x2="298" y2="142" class="ln dash" marker-end="url(#ar-l)"/>
+        <text x="240" y="136" class="s" text-anchor="middle">single-use</text>
+        <line x1="178" y1="168" x2="62" y2="168" class="hot" stroke-dasharray="5 4" marker-end="url(#ar-h)"/>
+        <text x="120" y="158" class="s" text-anchor="middle" style="fill:#FF8A5B">origin_mismatch</text>
+        <text x="16" y="194" class="m">EVERY REJECTION CARRIES A STABLE CODE</text>
+      </svg>
+      <figcaption>Drawing: the ceremony between browser, server and store, with one rejection</figcaption>
+    </figure>
+    <div class="sheet-cols">
+      <div class="sheet-text">
+        <p>A Go WebAuthn (passkey) relying-party library and HTTP server with its own CBOR decoder, COSE key parser and a software authenticator for testing. Every rejection carries a stable code naming the check that stopped it.</p>
+        <ul class="hl" aria-label="Highlights">
+          <li>34 typed verification checks, each with a negative test</li>
+          <li>Replays all 11 WebAuthn Level 3 credential vectors and 82 CBOR examples</li>
+          <li>Threat model mapping 19 threats to mitigations and tests</li>
+        </ul>
+      </div>
+      <div class="sheet-side">
+        <ul class="tags" aria-label="Technologies in passkeyd">
+          <li>Go</li><li>WebAuthn</li><li>CBOR</li><li>COSE</li><li>SQLite</li>
+        </ul>
+        <div class="proj-links">
+          <a href="https://github.com/tejashwinimmykala/passkeyd" aria-label="passkeyd source code on GitHub">Source code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <span>Tejashwini M · Business Systems Analyst · Lake Bluff, IL</span>
+    <a href="../#projects">Back to projects</a>
+  </div>
+</footer>
+</body>
+</html>

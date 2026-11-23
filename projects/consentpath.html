@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>consentpath | Tejashwini M</title>
+<meta name="description" content="consentpath: a multi-site clinical trial enrolment app where authorisation is decided by the data layer, proven by a negative-authorisation test matrix.">
+<link rel="canonical" href="https://tejashwinimmykala.github.io/projects/consentpath.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <marker id="ar-l" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9FB3CC"/></marker>
+  <marker id="ar-h" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#FF8A5B"/></marker>
+</defs></svg>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="../">Tejashwini M</a>
+    <a class="back" href="../#projects">All projects</a>
+  </div>
+</header>
+<main id="main">
+<article class="sheet">
+  <div class="wrap">
+    <p class="cat">Healthcare data security</p>
+    <h1 class="sheet-title">consentpath</h1>
+    <figure class="sheet-hero">
+      <img src="../assets/images/projects/consentpath-hero.jpg" alt="consentpath — Concept render" width="1280" height="720" loading="lazy">
+      <figcaption>Concept render</figcaption>
+    </figure>
+    <figure class="fig sheet-fig">
+      <svg viewBox="0 0 360 200" role="img" aria-label="Access matrix: coordinator, blinded investigator, unblinded statistician and monitor against Site A and Site B. Permits and denials are decided by the data layer.">
+        <text x="16" y="20" class="m">ROLE × SITE</text>
+        <text x="200" y="20" class="m" text-anchor="middle">SITE A</text>
+        <text x="290" y="20" class="m" text-anchor="middle">SITE B</text>
+        <line x1="12" y1="28" x2="348" y2="28" class="ln"/>
+        <line x1="12" y1="66" x2="348" y2="66" class="ln dash" opacity=".4"/>
+        <line x1="12" y1="102" x2="348" y2="102" class="ln dash" opacity=".4"/>
+        <line x1="12" y1="138" x2="348" y2="138" class="ln dash" opacity=".4"/>
+        <text x="16" y="50" class="l">Coordinator</text>
+        <text x="16" y="86" class="l">Blinded investigator</text>
+        <text x="16" y="122" class="l">Unblinded statistician</text>
+        <text x="16" y="158" class="l">Monitor</text>
+        <circle cx="200" cy="46" r="8" class="okf"/>
+        <path d="M285 41l10 10m0-10l-10 10" class="hot"/>
+        <circle cx="200" cy="82" r="8" class="okf"/>
+        <path d="M285 77l10 10m0-10l-10 10" class="hot"/>
+        <circle cx="200" cy="118" r="8" class="okf"/>
+        <path d="M285 113l10 10m0-10l-10 10" class="hot"/>
+        <path d="M195 149l10 10m0-10l-10 10" class="hot"/>
+        <circle cx="290" cy="154" r="8" class="okf"/>
+        <text x="16" y="190" class="m">CLAIMS SET THE SESSION · VIEWS DECIDE</text>
+      </svg>
+      <figcaption>Drawing: the access matrix, permits and denials by role and site</figcaption>
+    </figure>
+    <div class="sheet-cols">
+      <div class="sheet-text">
+        <p>A multi-site clinical trial enrolment app where authorisation is decided by the data layer through security views keyed on session claims. The reference design is PostgreSQL row-level security; this repo models it with SQLite views. A negative-authorisation test matrix proves the denials.</p>
+        <ul class="hl" aria-label="Highlights">
+          <li>32-case matrix across 4 roles x 2 sites x 4 participants, asserting denial as well as permit</li>
+          <li>Column-level blinding of arm assignment and consent-gated genomic export</li>
+          <li>16 tests, plus an append-only access log enforced by triggers</li>
+        </ul>
+      </div>
+      <div class="sheet-side">
+        <ul class="tags" aria-label="Technologies in consentpath">
+          <li>TypeScript</li><li>SQL</li><li>PostgreSQL</li><li>Node.js</li><li>Mermaid</li>
+        </ul>
+        <div class="proj-links">
+          <a href="https://github.com/tejashwinimmykala/consentpath" aria-label="consentpath source code on GitHub">Source code</a>
+          <a href="https://tejashwinimmykala.github.io/consentpath/" aria-label="consentpath live demo">Live demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <span>Tejashwini M · Business Systems Analyst · Lake Bluff, IL</span>
+    <a href="../#projects">Back to projects</a>
+  </div>
+</footer>
+</body>
+</html>

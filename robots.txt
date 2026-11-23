@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tejashwinimmykala.github.io/sitemap.xml

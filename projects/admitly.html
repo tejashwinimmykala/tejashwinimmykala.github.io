@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>admitly | Tejashwini M</title>
+<meta name="description" content="admitly: a Kubernetes validating and mutating admission webhook with CEL policies, Audit and Enforce modes and securityContext defaulting.">
+<link rel="canonical" href="https://tejashwinimmykala.github.io/projects/admitly.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <marker id="ar-l" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9FB3CC"/></marker>
+  <marker id="ar-h" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#FF8A5B"/></marker>
+</defs></svg>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="../">Tejashwini M</a>
+    <a class="back" href="../#projects">All projects</a>
+  </div>
+</header>
+<main id="main">
+<article class="sheet">
+  <div class="wrap">
+    <p class="cat">Kubernetes security</p>
+    <h1 class="sheet-title">admitly</h1>
+    <figure class="fig sheet-fig">
+      <svg viewBox="0 0 360 200" role="img" aria-label="An admission request passes a mutate step that sets defaults and a validate step that runs CEL policies. Audit mode warns, Enforce mode denies.">
+        <rect x="10" y="84" width="70" height="40" class="bx"/><text x="18" y="108" class="s">request</text>
+        <rect x="104" y="84" width="78" height="40" class="bx"/>
+        <text x="112" y="101" class="l">mutate</text><text x="112" y="116" class="m">defaults</text>
+        <rect x="206" y="84" width="70" height="40" class="bx"/>
+        <text x="214" y="101" class="l">validate</text><text x="214" y="116" class="m">CEL</text>
+        <line x1="80" y1="104" x2="102" y2="104" class="ln" marker-end="url(#ar-l)"/>
+        <line x1="182" y1="104" x2="204" y2="104" class="ln" marker-end="url(#ar-l)"/>
+        <path d="M276 104 C288 104 288 56 300 56" class="ln" marker-end="url(#ar-l)"/>
+        <path d="M276 104 C288 104 288 144 300 144" class="hot" marker-end="url(#ar-h)"/>
+        <rect x="300" y="40" width="52" height="32" class="bx"/><text x="312" y="61" class="s">warn</text>
+        <rect x="300" y="128" width="52" height="32" class="hot"/><text x="312" y="149" class="s" style="fill:#FF8A5B">deny</text>
+        <text x="12" y="190" class="m">AUDIT WARNS · ENFORCE DENIES</text>
+      </svg>
+      <figcaption>Drawing: a request through mutate and validate, then warn or deny</figcaption>
+    </figure>
+    <div class="sheet-cols">
+      <div class="sheet-text">
+        <p>A Kubernetes validating and mutating admission webhook with a CEL policy engine, Audit vs Enforce modes, a built-in security policy library, securityContext defaulting, and cosign-compatible image signature verification.</p>
+        <ul class="hl" aria-label="Highlights">
+          <li>Policies written as CEL, with Audit mode that warns and Enforce mode that denies</li>
+          <li>Built-in policies for privileged containers, required labels, resource limits, registry allow-lists and image digest pinning</li>
+          <li>Mutation sets hardened securityContext defaults only where a workload left a value unset</li>
+        </ul>
+        <p class="sheet-note">Status: experimental. It has not been run on a production cluster.</p>
+      </div>
+      <div class="sheet-side">
+        <ul class="tags" aria-label="Technologies in admitly">
+          <li>Go</li><li>CEL</li><li>Kubernetes</li><li>cosign</li>
+        </ul>
+        <div class="proj-links">
+          <a href="https://github.com/tejashwinimmykala/admitly" aria-label="admitly source code on GitHub">Source code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <span>Tejashwini M · Business Systems Analyst · Lake Bluff, IL</span>
+    <a href="../#projects">Back to projects</a>
+  </div>
+</footer>
+</body>
+</html>

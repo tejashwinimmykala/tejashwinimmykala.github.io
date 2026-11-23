@@ -1,0 +1,46 @@
+{
+  "name": "Tejashwini M",
+  "title": "Business Systems Analyst | Business Analyst",
+  "summary": "Business Systems Analyst with 4+ years of experience in requirements analysis, business process improvement, SQL, REST APIs and UAT. I write BRDs, FRDs, user stories and functional specifications, and work with cross-functional teams in Agile environments to deliver effective business solutions.",
+  "location": "Lake Bluff, IL",
+  "readouts": [
+    {
+      "value": "4+ yrs",
+      "label": "in business and systems analysis"
+    },
+    {
+      "value": "120+",
+      "label": "knowledge assets reviewed at Abbott"
+    },
+    {
+      "value": "8",
+      "label": "Agile sprints supported at DICEUS"
+    },
+    {
+      "value": "10+",
+      "label": "reporting datasets reconciled at Mphasis"
+    }
+  ],
+  "ctas": [
+    {
+      "label": "View projects",
+      "href": "#projects",
+      "kind": "primary"
+    },
+    {
+      "label": "Résumé",
+      "href": "assets/files/tejashwini-m-resume.pdf",
+      "kind": "resume"
+    },
+    {
+      "label": "Get in touch",
+      "href": "#contact",
+      "kind": "secondary"
+    }
+  ],
+  "social": {
+    "github": "https://github.com/tejashwinimmykala",
+    "email": "tejaswini.mykala@belvionus.com",
+    "phone": "+1 940-350-9239"
+  }
+}

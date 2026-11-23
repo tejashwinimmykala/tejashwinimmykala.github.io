@@ -1,0 +1,37 @@
+{
+  "paragraphs": [
+    "I turn business needs into clear, testable requirements. I gather them through stakeholder interviews and workshops, then document them as BRDs, FRDs, user stories, use cases and acceptance criteria.",
+    "I compare AS-IS and TO-BE workflows, run gap and impact analysis, and use SQL and Excel to validate data and reconcile reporting discrepancies. I also analyze REST API interfaces and document field-level mappings and validation rules.",
+    "I currently work as a Knowledge Management Analyst at Abbott Laboratories. There I review enterprise knowledge repositories and SOPs, standardize taxonomies and metadata, and track content freshness through governance reports."
+  ],
+  "highlights": [
+    {
+      "label": "Discipline",
+      "value": "Business Systems Analysis"
+    },
+    {
+      "label": "Current role",
+      "value": "Knowledge Management Analyst, Abbott"
+    },
+    {
+      "label": "Base",
+      "value": "Lake Bluff, IL"
+    },
+    {
+      "label": "Experience",
+      "value": "4+ years"
+    },
+    {
+      "label": "Education",
+      "value": "Master's, Information Systems Technology"
+    },
+    {
+      "label": "Domain",
+      "value": "Healthcare operations, claims systems"
+    },
+    {
+      "label": "Methods",
+      "value": "Agile, Scrum, UAT"
+    }
+  ]
+}

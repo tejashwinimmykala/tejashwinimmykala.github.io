@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cannibal | Tejashwini M</title>
+<meta name="description" content="cannibal: search cannibalisation detection that tests every within-query page pair and corrects for multiple testing.">
+<link rel="canonical" href="https://tejashwinimmykala.github.io/projects/cannibal.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+  <marker id="ar-l" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#9FB3CC"/></marker>
+  <marker id="ar-h" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#FF8A5B"/></marker>
+</defs></svg>
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="../">Tejashwini M</a>
+    <a class="back" href="../#projects">All projects</a>
+  </div>
+</header>
+<main id="main">
+<article class="sheet">
+  <div class="wrap">
+    <p class="cat">Data analysis</p>
+    <h1 class="sheet-title">cannibal</h1>
+    <figure class="sheet-hero">
+      <img src="../assets/images/projects/cannibal-hero.jpg" alt="cannibal — Concept render" width="1280" height="720" loading="lazy">
+      <figcaption>Concept render</figcaption>
+    </figure>
+    <figure class="fig sheet-fig">
+      <svg viewBox="0 0 360 200" role="img" aria-label="Scatter of page pairs. Most dots are noise; a few connected pairs are flagged as real competition, separated by a corrected threshold.">
+        <line x1="24" y1="170" x2="348" y2="170" class="ln"/>
+        <line x1="24" y1="18" x2="24" y2="170" class="ln"/>
+        <line x1="24" y1="120" x2="348" y2="44" class="sky dash" style="stroke-width:1.2"/>
+        <g fill="#5A6F93">
+          <circle cx="40" cy="150" r="2.5"/><circle cx="56" cy="128" r="2.5"/><circle cx="70" cy="160" r="2.5"/>
+          <circle cx="88" cy="140" r="2.5"/><circle cx="96" cy="112" r="2.5"/><circle cx="110" cy="156" r="2.5"/>
+          <circle cx="120" cy="130" r="2.5"/><circle cx="134" cy="146" r="2.5"/><circle cx="146" cy="118" r="2.5"/>
+          <circle cx="158" cy="160" r="2.5"/><circle cx="170" cy="138" r="2.5"/><circle cx="184" cy="126" r="2.5"/>
+          <circle cx="196" cy="152" r="2.5"/><circle cx="210" cy="114" r="2.5"/><circle cx="222" cy="144" r="2.5"/>
+          <circle cx="236" cy="158" r="2.5"/><circle cx="248" cy="128" r="2.5"/><circle cx="262" cy="150" r="2.5"/>
+          <circle cx="276" cy="120" r="2.5"/><circle cx="290" cy="140" r="2.5"/><circle cx="304" cy="108" r="2.5"/>
+          <circle cx="318" cy="152" r="2.5"/><circle cx="332" cy="130" r="2.5"/><circle cx="60" cy="96" r="2.5"/>
+          <circle cx="118" cy="96" r="2.5"/><circle cx="176" cy="100" r="2.5"/><circle cx="232" cy="98" r="2.5"/>
+          <circle cx="286" cy="92" r="2.5"/><circle cx="90" cy="84" r="2.5"/><circle cx="150" cy="76" r="2.5"/>
+          <circle cx="270" cy="66" r="2.5"/><circle cx="330" cy="84" r="2.5"/>
+        </g>
+        <line x1="104" y1="40" x2="164" y2="54" class="hot"/>
+        <line x1="206" y1="34" x2="258" y2="46" class="hot"/>
+        <line x1="290" y1="40" x2="330" y2="26" class="hot"/>
+        <g class="hotf"><circle cx="104" cy="40" r="4"/><circle cx="164" cy="54" r="4"/><circle cx="206" cy="34" r="4"/><circle cx="258" cy="46" r="4"/><circle cx="290" cy="40" r="4"/><circle cx="330" cy="26" r="4"/></g>
+        <circle cx="30" cy="30" r="4" class="hotf"/><text x="40" y="34" class="m">REAL PAIRS</text>
+        <circle cx="132" cy="30" r="2.5" fill="#5A6F93"/><text x="140" y="34" class="m">NOISE</text>
+        <text x="24" y="190" class="m">ONE DOT PER WITHIN-QUERY PAIR</text>
+      </svg>
+      <figcaption>Drawing: every page pair as one dot, with the real pairs picked out</figcaption>
+    </figure>
+    <div class="sheet-cols">
+      <div class="sheet-text">
+        <p>Search cannibalisation detection that tests every within-query page pair for genuine competition and corrects for multiple testing. The output is a short list of real competing pairs instead of hundreds of noisy ones.</p>
+        <ul class="hl" aria-label="Highlights">
+          <li>One site: 173 uncorrected flags (161 false) against 14 with Benjamini-Hochberg (2 false)</li>
+          <li>3,575 page pairs tested; all 12 planted pairs found</li>
+          <li>Pure standard-library Python, with a seeded generator that measures precision</li>
+        </ul>
+      </div>
+      <div class="sheet-side">
+        <ul class="tags" aria-label="Technologies in cannibal">
+          <li>Python</li><li>Chi-square test</li><li>Benjamini-Hochberg</li><li>Bonferroni</li><li>unittest</li>
+        </ul>
+        <div class="proj-links">
+          <a href="https://github.com/tejashwinimmykala/cannibal" aria-label="cannibal source code on GitHub">Source code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <span>Tejashwini M · Business Systems Analyst · Lake Bluff, IL</span>
+    <a href="../#projects">Back to projects</a>
+  </div>
+</footer>
+</body>
+</html>
